@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    display: flex;
+    width: 100%;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+section a {
+    color: black;
+    font-style: italic;
+}
+
+.first {
+    background:rgb(3, 219, 147);
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 1px solid #555555;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+strong {
+    font-weight: 600;
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid #eee;
+}
+
+h2 {
+    font-weight: 500;
+    margin: 10px 0 0 8px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0 10px 8px;
+}
+
+h4 {
+    margin: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+p {
+    margin: 10px;
+}
+
+.example {
+    background: rgb(207, 207, 207);
+    padding: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section ul {
+    margin: 8px;
+}
+
+#navbar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    border-right: 1px solid black;
+}
+
+#navbar ul {
+    padding: 0;
+}
+
+#navbar li {
+    width: 100%;
+    font-size: 16px;
+    border-bottom: 1px solid #535353;
+}
+
+#navbar a { 
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+}
+
+#navbar a:hover {
+    background: rgb(1, 231, 155);
+}
+
+#main-doc {
+    margin-left: 250px;
+    position: absolute;
+    padding: 10px 20px;
+}
+
+code {
+    color: rgb(201, 47, 0);
+    padding: 4px;
+    font-size: 14px;
+}
+
+pre {
+    background-color: rgb(226, 226, 226);
+    padding: 5px 30px;
+}
+
+.syntax-ex p {
+    display: inline;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.p-value {
+    display: inline;
+    margin-left: 60px;
+}
+
+.p-value p {
+    display: inline;
+    margin-left: 20px;
+}
+
+.note {
+    background: #f8ff92;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.warning {
+    background:rgb(250, 210, 224);
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.intro {
+    font-size: 16px;
+}

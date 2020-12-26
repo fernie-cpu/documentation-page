@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>FCC: Build a Technical Documentation Page</title>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <nav id="navbar">
+        <header class="first">CSS Introduction</header>
+        <ul>
+            <li><a href="#What_is_CSS?" class="nav-link">What is CSS?</a></li>
+            <li><a href="#Syntax" class="nav-link">Syntax</a></li>
+            <li><a href="#Selectors" class="nav-link">Selectors</a></li>
+            <li><a href="#How_To_Add_CSS" class="nav-link">How To Add CSS</a></li>
+            <li><a href="#Comments" class="nav-link">Comments</a></li>
+            <li><a href="#Reference" class="nav-link">Reference</a></li>
+            <li><a href="">Page Code</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="What_is_CSS?">
+            <header class="title">What Is CSS?</header>
+            <ul>
+                <li><b>CSS</b> stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets</li>
+                <li>CSS describes <strong>how HTML elements are to be displayed on screen, paper, or in other media</strong></li>
+                <li>CSS <strong>saves a lot of work</strong>. It can control the layout of multiple web pages all at once</li>
+                <li>External stylesheets are stored in <strong>CSS files</strong></li>
+            </ul>
+            <hr>
+            <h2>Why Use CSS?</h2>
+                    <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+                    <div class="example">
+                    <h3>CSS Example</h3>
+                    <pre><code>body {
+    background-color: lightblue;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+p {
+    font-family: verdana;
+    font-size: 20px;
+}</code></pre>
+                    </div>
+                    <hr>
+<h2>CSS Solved a Big Problem</h2>
+<p>HTML was NEVER intended to contain tags for formatting a web page!</p>
+<p>HTML was created to <strong>describe the content</strong> of a web page, like:</p>
+<p>&lt;h1>This is a heading&lt;/h1></p>
+<p>&lt;p>This is a paragraph.&lt;/p></p>
+<p>When tags like &lt;font>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.</p>
+    <p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
+    <p>CSS removed the style formatting from the HTML page!</p>
+    <hr>
+    <h2>CSS Saves a Lot of Work!</h2>
+    <p>The style definitions are normally saved in external .css files.</p>
+    <p>With an external stylesheet file, you can change the look of an entire website by changing just one file!</p>
+        </section>
+        <hr>
+        <hr>
+        <section class="main-section" id="Syntax">
+            <header class="title">Syntax</header>
+                <p>A CSS rule-set consists of a selector and a declaration block:</p>
+                <div class="syntax-ex">
+                    <p>Selector</p>
+                    <p>Declaration</p>
+                    <p>Declaration</p>
+                    <pre><code>h1 { color: blue; font-size: 12px; }</code></pre>
+                    <div class="p-value">
+                    <p>Property | Value | Property | Value</p>
+                    </div>
+                </div>
+                <p>The selector points to the HTML element you want to style.</p>
+                <p>The declaration block contains one or more declarations separated by semicolons.</p>
+                <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+                <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+                <div class="example">
+                    <h3>Example</h3>
+                    <p>In this example all &lt;p> elements will be center-aligned, with a red text color:</p>
+                    <pre><code>p {
+    color: red;
+    text-align: center;
+}</code></pre>
+                </div>
+                <h4>Example Explained</h4>
+                <ul>
+                    <li><code>p</code> is a <strong>selector</strong> in CSS (it points to the HTML element you want to style: &lt;p>).</li>
+                    <li><code>color</code> is a property, and <code>red</code> is the property value</li>
+                    <li><code>text-align</code> is a property, and <code>center</code> is the property value</li>
+                </ul>
+        </section>
+        <hr>
+        <hr>
+        <section class="main-section" id="Selectors">
+            <header class="title">Selectors</header>
+            <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+            <p>We can divide CSS selectors into five categories:</p>
+            <ul>
+                <li>Simple selectors (select elements based on name, id, class)</li>
+                <li><a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank" >Combinator selectors</a> (select elements based on a specific relationship between them)</li>
+                <li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank" >Pseudo-class selectors</a> (select elements based on a certain state)</li>
+                <li><a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank" >Pseudo-elements selectors</a> (select and style a part of an element)</li>
+                <li><a href="https://www.w3schools.com/css/css_attribute_selectors.asp" target="_blank" >Attribute selectors</a> (select elements based on an attribute or attribute value)</li>
+            </ul>
+            <p>This page will explain the most basic CSS selectors.</p>
+            <hr>
+            <h2>The CSS element Selector</h2>
+            <p>This page will explain the most basic CSS selectors.</p>
+            <div class="example">
+                <h3>Example</h3>
+                <p>Here, all <p> elements on the page will be center-aligned, with a red text color: </p>
+<pre><code>p {
+    text-align: center;
+    color: red;
+  }</code></pre>
+            </div>
+            <hr>
+            <h2>The CSS id Selector</h2>
+            <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+            <p>The id of an element is unique within a page, so the id selector is used to select one unique element!</p>
+            <p>To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+            <div class="example">
+                <h3>Example</h3>
+                <p>The CSS rule below will be applied to the HTML element with id="para1":</p>
+<pre><code>#para1 {
+    text-align: center;
+    color: red;
+  }
+</code></pre>
+            </div>
+            <div class="note">
+                <p><strong>Note:</strong> An id cannot start with a number!</p>
+            </div>
+            <hr>
+            <h2>The CSS class Selector</h2>
+            <p>The class selector selects HTML elements with a specific class attribute.</p>
+            <p>To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+            <div class="example">
+                <h3>Example</h3>
+                <p>In this example all HTML elements with class="center" will be red and center-aligned: </p>
+<pre><code>.center {
+    text-align: center;
+    color: red;
+  }
+</code></pre>
+            </div>
+            <p>You can also specify that only specific HTML elements should be affected by a class.</p>
+            <div class="example">
+                <h3>Example</h3>
+                <p>In this example only <p> elements with class="center" will be center-aligned:</p>
+<pre><code>p.center {
+    text-align: center;
+    color: red;
+  }
+</code></pre>
+            </div>
+            <p>HTML elements can also refer to more than one class.</p>
+            <div class="example">
+                <h3>Example</h3>
+                <p>In this example the <p> element will be styled according to class="center" and to class="large": </p>
+                <pre><code>&lt;p class="center large">This paragraph refers to two classes.</p></code></pre>
+            </div>
+            <div class="note">
+                <p><strong>Note:</strong> A class name cannot start with a number!</p>
+            </div>
+            <hr>
+            <h2>The CSS Universal Selector</h2>
+            <p>The universal selector (*) selects all HTML elements on the page.</p>
+            <div class="example">
+                <h3>Example</h3>
+                <p>The CSS rule below will affect every HTML element on the page:</p>
+<pre><code>* {
+    text-align: center;
+    color: blue;
+  }
+</code></pre>
+            </div>
+            <hr>
+            <h2>The CSS Grouping Selector</h2>
+            <p>The grouping selector selects all the HTML elements with the same style definitions.</p>
+            <p>Look at the following CSS code (the h1, h2, and p elements have the same style definitions):</p>
+            <div class="example">
+<pre><code>h1 {
+    text-align: center;
+    color: red;
+  }
+  
+  h2 {
+    text-align: center;
+    color: red;
+  }
+  
+  p {
+    text-align: center;
+    color: red;
+  }
+</code></pre>
+            </div>
+            <p>It will be better to group the selectors, to minimize the code.</p>
+            <p>To group selectors, separate each selector with a comma.</p>
+            <div class="example">
+                <h3>Example</h3>
+                <p>In this example we have grouped the selectors from the code above:</p>
+<pre><code>h1, h2, p {
+    text-align: center;
+    color: red;
+  }
+</code></pre>
+            </div>
+            <hr>
+            <h2>All CSS Simple Selectors</h2>
+            <div class="grid">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th width="20%">Selector</th>
+                            <th width="20%">Example</th>
+                            <th>Example description</th>
+                        </tr>
+                        <tr>
+                            <td>#<i>id</i></td>
+                            <td>#firstname</td>
+                            <td>Selects the element with id="firstname"</td>
+                        </tr>
+                        <tr>
+                            <td><i>.class</i></td>
+                            <td>.intro</td>
+                            <td>Selects all elements with class="intro"</td>
+                        </tr>
+                        <tr>
+                            <td><i>element.class</i></td>
+                            <td>p.intro</td>
+                            <td>Selects only &lt;p> elements with class="intro"</td>
+                        </tr>
+                        <tr>
+                            <td><i>*</i></td>
+                            <td>*</td>
+                            <td>Selects all elements</td>
+                        </tr>
+                        <tr>
+                            <td><i>element</i></td>
+                            <td>p</td>
+                            <td>Selects all &lt;p> elements</td>
+                        </tr>
+                        <tr>
+                            <td><i>element,element,..</i></td>
+                            <td>div, p</td>
+                            <td>Selects all &lt;div> elements and all &lt;p> elements</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <hr>
+        <hr>
+        <section class="main-section" id="How_To_Add_CSS">
+            <header class="title">How To Add CSS</header>
+            <hr>
+            <p class="intro">When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+            <hr>
+            <h2>Three Ways to Insert CSS</h2>
+            <p>There are three ways of inserting a style sheet:</p>
+            <ul>
+                <li>External CSS</li>
+                <li>Internal CSS</li>
+                <li>Inline CSS</li>
+            </ul>
+            <hr>
+            <h2>External CSS</h2>
+            <p>With an external style sheet, you can change the look of an entire website by changing just one file!</p>
+            <p>Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.</p>
+            <div class="example">
+                <h3>Example</h3>
+                <p>External styles are defined within the <link> element, inside the <head> section of an HTML page:</p>
+<pre><code><<span>!DOCTYPE html></span>
+    <<span>html></span>
+    <<span>head></span>
+    <<span>link rel="stylesheet" href="mystyle.css"></span>
+    <<span>/head></span>
+    <<span>body></spam>
+
+    <<span>h1>This is a heading<</span>/h1>
+    <<span>p>This is a paragraph.<</span>/p>
+
+    <<span>/body></span>
+    <<span>/html></span>
+</code></pre>
+            </div>
+            <p>An external style sheet can be written in any text editor, and must be saved with a .css extension.</p>
+            <p>The external .css file should not contain any HTML tags.</p>
+            <p>Here is how the "mystyle.css" file looks:</p>
+            <div class="example">
+                <h3>mystyle.css</h3>
+<pre><code>body {
+    background-color: lightblue;
+}
+      
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+</code></pre>
+            </div>
+            <div class="warning">
+                <p><strong>Note:</strong> Do not add a space between the property value and the unit (such as <code>margin-left: 20 px;</code>). The correct way is: <code>margin-left: 20px;</code></p>
+            </div>
+            <hr>
+            <h2>Internal CSS</h2>
+            <p>An internal style sheet may be used if one single HTML page has a unique style.</p>
+            <p>The internal style is defined inside the &lt;style> element, inside the head section.</p>
+                <div class="example">
+                    <h3>Example</h3>
+                    <p>Internal styles are defined within the &lt;style> element, inside the <head> section of an HTML page:</p>
+<pre><code><<span>!DOCTYPE html></span>
+    <<span>html></span>
+    <<span>head></span>
+    <<span>&lt;style>
+        body {
+          background-color: linen;
+        }
+        h1 {
+          color: maroon;
+          margin-left: 40px;
+        }
+        &lt;/style></span>
+    <<span>/head></span>
+    <<span>body></spam>
+    <<span>h1>This is a heading<</span>/h1>
+    <<span>p>This is a paragraph.<</span>/p>
+    <<span>/body></span>
+    <<span>/html></span>
+</code></pre>
+                </div>
+                <hr>
+                <h2>Inline CSS</h2>
+                <p>An inline style may be used to apply a unique style for a single element.</p>
+                <p>To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p>
+                <div class="example">
+                    <h3>Example</h3>
+                    <p>Inline styles are defined within the "style" attribute of the relevant element:</p>
+<pre><code><<span>!DOCTYPE html></span>
+<<span>html></span>
+<<span>body></span>
+    
+<<span>h1 style="color:blue;text-align:center;">This is a heading<</span>/h1>
+<<span>p style="color:red;">This is a paragraph.<</span>/p>
+    
+<<span>/body></span>
+<</span>/html></span>
+</code></pre>
+                </div>
+                <div class="note">
+                    <p><strong>Tip:</strong> An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.</p>
+                </div>
+                <hr>
+                <h2>Multiple Style Sheets</h2>
+                <p>If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.</p>
+                <div class="example">
+                    <p>Assume that an external style sheet has the following style for the &lt;h1> element:</p>
+<pre><code>h1 {
+    color: navy;
+}
+</code></pre>
+                </div>
+                <div class="example">
+                    <p>Then, assume that an <strong>internal style sheet</strong> also has the following style for the &lt;h1> element:</p>
+<pre><code>h1 {
+    color: orange;
+}
+</code></pre>
+                </div>
+                <div class="example">
+                    <h3>Example</h3>
+                    <p>If the internal style is defined <strong>after</strong> the link to the external style sheet, the &lt;h1> elements will be "orange":</p>
+<pre><code>&lt;head>
+<<span>link rel="stylesheet" type="text/css" href="mystyle.css"></span>
+<<span>style></span>
+h1 {
+    color: orange;
+}
+<<span>/style></span>
+&lt;/head>
+</code></pre>
+                </div>
+                <div class="example">
+                    <h3>Example</h3>
+                    <p>However, if the internal style is defined <strong>before</strong> the link to the external style sheet, the &lt;h1> elements will be "navy":</p>
+<pre><code>&lt;head>
+&lt;style>
+h1 {
+    color: orange;
+}
+&lt;/style>
+&lt;link rel="stylesheet" type="text/css" href="mystyle.css">
+&lt;/head>
+</code></pre>
+                </div>
+                <hr>
+                <h2>Cascading Order</h2>
+                <p>What style will be used when there is more than one style specified for an HTML element?</p>
+                <p>All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:</p>
+                <ol>
+                    <li>Inline style (inside an HTML element)</li>
+                    <li>External and internal style sheets (in the head section)</li>
+                    <li>Browser default</li>
+                </ol>
+                <p>So, an inline style has the highest priority, and will override external and internal styles and browser defaults.</p>
+        </section>
+        <hr>
+        <hr>
+        <section class="main-section" id="Comments">
+            <header class="title">Comments</header>
+            <p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+            <p>Comments are ignored by browsers.</p>
+            <p>A CSS comment is placed inside the <code>&lt;style></code> element, and starts with <code>/*</code> and ends with <code>*/</code>:</p>
+            <div class="example">
+                <h3>Example</h3>
+<pre><code>/* This is a single-line comment */
+p {
+    color: red;
+}
+</code></pre>
+            </div>
+            <p>You can add comments wherever you want in the code:</p>
+            <div class="example">
+                <h3>Example</h3>
+<pre><code>p {
+    color: red;  /* Set text color to red */
+}
+</code></pre>
+            </div>
+            <p>Comments can also span multiple lines:</p>
+            <div class="example">
+                <h3>Example</h3>
+<pre><code>/* This is
+a multi-line
+comment */
+    
+p {
+    color: red;
+}
+</code></pre>
+            </div>
+            <hr>
+            <h2>HTML and CSS Comments</h2>
+            <p>From the <a class="link-out" href="https://www.w3schools.com/html/html_comments.asp" target="_blank">HTML tutorial</a>, you learned that you can add comments to your HTML source by using the <!--...--> syntax.</p>
+            <p>In the following example, we use a combination of HTML and CSS comments:</p>
+            <div class="example">
+<pre><code>&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;style>
+p {
+    color: red; /* Set text color to red */
+}
+&lt;/style>
+&lt;/head>
+&lt;body>
+&lt;h2>My Heading&lt;/h2>   
+<!-- These paragraphs will be red -->
+&lt;p>Hello World!&lt;/p>
+&lt;p>This paragraph is styled with CSS.&lt;/p>
+&lt;p>CSS comments are not shown in the output.&lt;/p>
+&lt;/body>
+&lt;/html>
+</code></pre>
+            </div>
+            <p>...</p>
+        </section>
+        <hr>
+        <hr>
+        <section class="main-section" id="Reference">
+            <header class="title">Reference</header>
+            <p>All the content include in this page is taken from <a href="https://www.w3schools.com/" target="_blank">W3schools.com</a>.</p>
+        </section>
+
+    </main>
+</body>
+</html>
